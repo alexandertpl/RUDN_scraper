@@ -1,0 +1,22 @@
+[project]
+name = "scraper"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Alexander",email = "test@test.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "typing-extensions (>=4.13.2,<5.0.0)",
+    "bs4 (>=0.0.2,<0.0.3)",
+    "requests (>=2.32.3,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "scraper", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
